@@ -1,0 +1,16 @@
+<!-- res/values/dimensions.xml -->
+<resources>
+    <dimen name="building_width">200dp</dimen>
+    <dimen name="building_height">400dp</dimen>
+    <dimen name="grid_item_width">120dp</dimen>
+    <dimen name="grid_item_height">120dp</dimen>
+    <dimen name="image_size">180dp</dimen>
+    <dimen name="image_button_height">150dp</dimen>
+    <dimen name="text_height_upload">40dp</dimen>
+    <dimen name="space_height_upload">0dp</dimen>
+    <dimen name="symbol_height">20dp</dimen>
+    <dimen name="chatimage_size">150dp</dimen>
+    <dimen name="fixed_button_height">125dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

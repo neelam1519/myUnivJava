@@ -1,0 +1,159 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.FINDANY" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryDark">@color/darker_gray</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/darker_gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <style name="Text" >
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="rippleColor">@color/red</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">none</item> <!-- Disable the default box background -->
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">20dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:colorControlActivated">@color/white</item>
+        <item name="android:colorControlHighlight">@color/red</item>
+    </style>
+
+    <style name="AppTheme.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="navigation">
+        <!-- Background color of the BottomNavigationView -->
+        <item name="android:background">@color/white</item>
+
+        <!-- Icon color when not selected -->
+        <item name="itemIconTint">@color/red</item>
+
+        <!-- Icon color when selected -->
+        <item name="itemIconTint">@color/red</item>
+
+        <!-- Text color when not selected -->
+        <item name="itemTextColor">@color/red</item>
+
+        <!-- Text color when selected -->
+        <item name="itemTextColor">@color/red</item>
+    </style>
+
+    <style name="ToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#39D1FA</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="OtherLoginReview" parent="Widget.AppCompat.ImageButton">
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="HeadingTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomImageButtonStyle" parent="Widget.AppCompat.ImageButton">
+        <item name="android:actionBarItemBackground">@color/black</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!--MainActivity-->
+    <style name="MainActivityBkg">
+        <item name="android:background"></item>
+    </style>
+
+    <style name="MainActivityTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MainActivityToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#39D1FA</item>
+    </style>
+
+    <!--Resume colors-->
+    <style name="ResumeTextView" parent="Widget.AppCompat.TextView">
+            <item name="android:textColor">@color/black </item>
+    </style>
+
+    <style name="HeadingResumeTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LinearLayoutStyle">
+        <item name="android:background">@drawable/linearlayout_background_layout</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!--groupChat-->
+
+    <style name="chatSenderName" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="groupChatBkg">
+        <item name="android:background">#CAFFEA</item>
+    </style>
+
+    <!--userAccount-->
+    <style name="userAccountImageView" parent="Widget.AppCompat.ImageButton">
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="SpinnerText" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!--StudentProfile-->
+
+    <style name="studentProfileBkg">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <!--OtpVerification-->
+    <style name="OtpVerification">
+        <item name="android:background">@drawable/edit_text_rounded_corner</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

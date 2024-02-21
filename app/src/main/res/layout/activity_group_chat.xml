@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    tools:context=".Group_Chat"
+    style="@style/groupChatBkg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:background="#73C1FE">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textBranch"
+                android:layout_width="60dp"
+                android:textColor="@color/black"
+                android:layout_height="25dp"
+                android:paddingEnd="8dp"
+                android:text="Branch:"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:backgroundTint="@color/black"
+                android:id="@+id/Chat_Branch"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@id/textBranch"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/Chat_Branch"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/textBranch"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="8dp"
+                android:text="Year:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:backgroundTint="@color/black"
+                android:id="@+id/Chat_Year"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/Chat_Branch"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/textYear"
+                android:entries="@array/Chat_Year"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textYear"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="-50dp"
+                android:layout_toRightOf="@+id/Chat_Year"
+                android:paddingEnd="8dp"
+                android:text="Notification:"
+                android:textSize="15dp" />
+
+            <Switch
+                android:id="@+id/notificationSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textNotification"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notificationSwitch"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/greendot"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/onlineusers"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="0"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/inputLayout"
+        android:layout_below="@+id/toolbar"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+    <!-- Typing TextView Section -->
+    <TextView
+        android:id="@+id/typing"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_above="@+id/inputLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@+id/chatRecyclerView"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp" />
+
+    <!-- Message Input EditText Section -->
+    <EditText
+        style="@style/groupChatTextView1"
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/icon_attachfile"
+        android:drawableRight="@drawable/send"
+        android:hint="Type your message" />
+
+    <!-- Loading ProgressBar Section -->
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+</RelativeLayout>

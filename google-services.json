@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "390220804592",
+    "firebase_url": "https://adroit-chemist-368310-default-rtdb.firebaseio.com",
+    "project_id": "adroit-chemist-368310",
+    "storage_bucket": "adroit-chemist-368310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390220804592:android:63bf70696b355a5b786d35",
+        "android_client_info": {
+          "package_name": "com.example.findany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390220804592-ah2ava7lkrfh2rf7070klrqt9dr8lr34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findany",
+            "certificate_hash": "7d6fb07651356b74a25795c6f7c3623524542ffe"
+          }
+        },
+        {
+          "client_id": "390220804592-kh8b6755kidigdtmufo4641ac1eh8b6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findany",
+            "certificate_hash": "9c687fd67c801048b5d33ac7f250fc270280fe1a"
+          }
+        },
+        {
+          "client_id": "390220804592-uug5r1ofaolbi8lkm4274an671ck14c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDDevyGQREt2HXvZ0SM4_WgC3yNt1xdAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390220804592-ek50ipql7f344vbdh315fl2qjbt74733.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390220804592:android:f434e886a83e90d7786d35",
+        "android_client_info": {
+          "package_name": "com.neelam.findany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390220804592-0jlknm18dqoc3f6debiogmfdeo01bscv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neelam.findany",
+            "certificate_hash": "7d6fb07651356b74a25795c6f7c3623524542ffe"
+          }
+        },
+        {
+          "client_id": "390220804592-2dc50n1jjmuupbgqkdh34en0mdegptuu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neelam.findany",
+            "certificate_hash": "9c687fd67c801048b5d33ac7f250fc270280fe1a"
+          }
+        },
+        {
+          "client_id": "390220804592-uug5r1ofaolbi8lkm4274an671ck14c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDDevyGQREt2HXvZ0SM4_WgC3yNt1xdAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390220804592-ek50ipql7f344vbdh315fl2qjbt74733.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7692584421652718~6068507914"
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                style="@style/CustomImageButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Title -->
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Opinion"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- Suggestion Input -->
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/edit_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Suggestion / Changes to be made "
+                android:padding="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Submit Button -->
+            <Button
+                style="@style/Button"
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="openFilePicker"
+                android:text="Upload File" />
+
+            <Button
+                style="@style/Button"
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="submitSuggestion" />
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/textView"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Hello, awesome FindAny app user!\n\nWelcome to the world of feedback and creativity! 🌟 We value your thoughts and opinions, so we've created this space just for you! Share your valuable insights about the app, and let your ideas soar as you suggest exciting new features that can take our app to the next level! 🚀\n\nWhether you've discovered something incredible or spotted a tiny hiccup, we want to hear it all! Your feedback will help us improve the app. 😊\n\nIs there a missing detail that you think should be included? Don't hesitate to let us know right here, and we'll make sure to add it pronto!\n\nYour voice matters, and we're super excited to hear what you have to say. Together, we can craft an app that's tailor-made for you and all our incredible users. So, don't hold back – share your thoughts, make your mark, and let's create something extraordinary together! 💬💡" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

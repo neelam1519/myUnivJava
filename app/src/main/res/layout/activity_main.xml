@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/MainActivityBkg"
+    tools:context=".MainActivity">
+
+    <!-- FrameLayout to wrap the main layout and ProgressBar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main layout goes here -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                style="@style/MainActivityToolBar"
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"/>
+
+            <!-- Grid Layout -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="250dp"
+                app:columnCount="2"
+                app:rowCount="4"
+                android:layout_below="@id/my_toolbar">
+
+                <!-- Materials -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1">
+
+                    <ImageView
+                        android:id="@+id/materials"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:backgroundTint="@color/red"
+                        android:layout_gravity="center"
+                        android:background="@drawable/materials"/>
+
+                    <TextView
+                        style="@style/MainActivityTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="Materials"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <!-- Student Profiles -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1">
+
+                    <ImageView
+
+                        android:id="@+id/studentprofiles"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/studentprofiles"/>
+
+                    <TextView
+                        style="@style/MainActivityTextView"
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="Student Profiles"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+
+                <!-- Let's Talk -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1">
+
+                    <ImageView
+                        android:id="@+id/groupchat"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/groupchat"/>
+
+                    <TextView
+                        style="@style/MainActivityTextView"
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="Let's Talk"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <!-- Let's Talk -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1">
+
+                    <ImageView
+                        android:id="@+id/socimage"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/klulogo"/>
+
+                    <TextView
+                        style="@style/MainActivityTextView"
+                        android:id="@+id/soctext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="SOC"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </androidx.gridlayout.widget.GridLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/left_nav_header"
+        app:menu="@menu/left_draw_layout" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".soc">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/ToolBar"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/black">
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textview"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Think as a bench: ">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/bench"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/firstplace"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Student 1" />
+
+                <Button
+                    android:id="@+id/secondplace"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="student 2" />
+
+                <Button
+                    android:id="@+id/thirdplace"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="student 3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bench"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/listsubmit"
+                style="@style/MaterialButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listLinearLayout"
+                android:layout_centerHorizontal="true"
+                android:text="Submit batches" />
+
+            <LinearLayout
+                android:id="@+id/fileslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listsubmit"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitfiles"
+                style="@style/MaterialButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fileslayout"
+                android:layout_centerHorizontal="true"
+                android:text="Submit Files" />
+
+
+            <LinearLayout
+                android:id="@+id/displayfileslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/submitfiles"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sittingarrangment"
+                style="@style/MaterialButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/displayfileslayout"
+                android:layout_centerHorizontal="true"
+                android:text="generate sitting" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/arrangmentCount"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sittingarrangment"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+            <LinearLayout
+                android:id="@+id/classroomslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrangmentCount"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveclassrooms"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classroomslayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="save classrooms" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/showresult"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saveclassrooms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Show Arrangment" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

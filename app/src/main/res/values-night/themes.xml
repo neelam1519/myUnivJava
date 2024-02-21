@@ -1,0 +1,136 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FINDANY" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_gray</item>
+        <item name="colorPrimaryDark">@color/darker_gray</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="colorPrimaryVariant">@color/light_gray</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+
+    <style name="Base.Theme.FINDANY" parent="Theme.Material3.DayNight.NoActionBar"></style>
+
+    <style name="ToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#95F69B</item>
+        <item name="android:titleTextColor">@color/black</item>
+    </style>
+
+    <style name="OtherLoginReview" parent="Widget.AppCompat.ImageButton">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="HeadingTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomImageButtonStyle" parent="Widget.AppCompat.ImageButton">
+        <item name="android:actionBarItemBackground">@color/black</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--MainActivity-->
+    <style name="MainActivityBkg">
+        <item name="android:background"></item>
+    </style>
+
+    <style name="MainActivityTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainActivityToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#39D1FA</item>
+    </style>
+
+    <!--Resume colors-->
+    <style name="ResumeTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white </item>
+    </style>
+
+    <style name="HeadingResumeTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="resumeBkg">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="LinearLayoutStyle">
+        <item name="android:background">@drawable/linearlayout_background_layout</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!--UserAccount-->
+
+    <style name="userAccountEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:drawableRight">@drawable/edit_foreground</item>
+    </style>
+
+    <style name="SpinnerText" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!--groupChat-->
+    <style name="chatSenderName" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="groupChatBkg">
+        <item name="android:background">#393F3D</item>
+    </style>
+
+    <style name="groupChatTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="groupChatTextView1" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--StudentProfile-->
+    <style name="studentProfileBkg">
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+    <!--OtpVerification-->
+    <style name="OtpVerification">
+        <item name="android:background">@drawable/edit_text_rounded_corner</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.findany'
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.neelam.findany"
+        minSdkVersion 29
+        targetSdkVersion 33
+        versionCode 75
+        versionName "3.1.7"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    buildToolsVersion '34.0.0'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:22.3.0'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore:24.9.1'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.navigation:navigation-fragment:2.7.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'androidx.sqlite:sqlite:2.4.0'
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'org.testng:testng:7.5.1'
+    implementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'com.google.android.libraries.places:places:3.3.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.0'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore:24.9.1'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation 'androidx.navigation:navigation-ui:2.7.5'
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+    implementation 'com.google.firebase:firebase-inappmessaging:20.4.0'
+    implementation 'com.google.firebase:firebase-appcheck:17.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    implementation 'androidx.activity:activity:1.8.0'
+    androidTestImplementation 'junit:junit:4.13.2'
+    implementation "androidx.room:room-runtime:2.6.1"
+    annotationProcessor "androidx.room:room-compiler:2.6.1"
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+    implementation 'org.apache.pdfbox:pdfbox:2.0.25'
+    implementation 'org.apache.poi:poi:5.2.3'
+    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
+    implementation 'com.hbb20:ccp:2.5.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0'
+    implementation 'com.google.api-client:google-api-client:2.2.0'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.32.1'
+    implementation 'com.google.apis:google-api-services-youtube:v3-rev20231011-2.0.0'
+    implementation 'com.opencsv:opencsv:5.5.2'
+
+    configurations.configureEach {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group == 'org.jetbrains.kotlin' && details.requested.name.startsWith('kotlin-stdlib')) {
+                    details.useVersion '1.8.20'
+                }
+            }
+        }
+    }
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'

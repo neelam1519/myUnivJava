@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background drawable (assuming spinner_shape is a drawable with a shape) -->
+    <item android:drawable="@drawable/spinner_shape" />
+
+    <!-- Arrow drawable with specified tint color -->
+    <item
+        android:drawable="@drawable/ic_arrow_down"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp" />
+</layer-list>

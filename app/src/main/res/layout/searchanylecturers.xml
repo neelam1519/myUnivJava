@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/image_border">
+
+    <!-- First Row: Two Text Boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/officeroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office roomNo"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/lecturername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecturer Name"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView
+            android:id="@+id/before"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="before"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:id="@+id/ongoing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Ongoing"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Next"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_margin="0dp" />
+
+        <!-- Add the new TextView below -->
+        <TextView
+            android:id="@+id/beforetext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="Before Text"
+            android:padding="8dp" />
+
+        <!-- Add the TextView below the first row -->
+        <TextView
+            android:id="@+id/ongoingtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Ongoing Text"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Add the TextView below the first row -->
+        <TextView
+            android:id="@+id/aftertext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="After Text"
+            android:gravity="center"
+            android:padding="8dp" />
+    </GridLayout>
+</LinearLayout>

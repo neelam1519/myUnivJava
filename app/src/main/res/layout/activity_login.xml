@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/bb"
+    style="@style/Text"
+    android:layout_gravity="center">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/forgotpassword2"
+        style="@style/AppTheme.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password"
+        android:textAllCaps="false" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/forgotpassword3"
+        style="@style/AppTheme.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password"
+        android:textAllCaps="false" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/applogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:alpha="0.9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/AppTheme.TextInputLayout"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/applogo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/AppTheme.TextInputLayout"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/AppTheme.OutlinedButton"
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password"
+        android:textAllCaps="false"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/AppTheme.MaterialButton"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotpassword"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        style="@style/AppTheme.OutlinedButton"
+        android:id="@+id/text_login_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login using the college mail to access all"
+        android:layout_below="@id/login"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/yellow"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/AppTheme.OutlinedButton"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login_info"
+        android:layout_marginTop="25dp"
+        android:text="Go to Register"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        style="@style/AppTheme.OutlinedButton"
+        android:id="@+id/text_additional_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_below="@id/register"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/googlesignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_additional_info"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/common_google_signin_btn_icon_dark"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
