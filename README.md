@@ -39,8 +39,17 @@ What Can "FindAny" Do?
 
 --> Scalability and Flexibility: Built using Flutter and Firebase, FindAny is scalable and adaptable, capable of accommodating the evolving needs and requirements of university students.
 
-How to Use "FindAny"?
+How to run locally:
 1)Get the Code: Clone the FindAny repository to your computer. 
 2)Set Up Your Environment: Open the project in your favorite Software (like Android Studio or VSCode). 
 3)Run the App: Fire up the app on your phone or emulator. 
 4)Start Exploring: Use the bottom navigation bar to navigate through the app and access all the cool features.
+
+Techstacks used:
+java,firebase
+
+What's next ?
+Our future updates will include features to display YouTube videos for studying purposes, provide university news updates, and enable student registration for university events.
+
+Declaration
+We confirm that the project showcased here was either developed entirely during the hackathon or underwent significant updates within the hackathon timeframe. We understand that if any plagiarism from online sources is detected, our project will be disqualified, and our participation in the hackathon will be revoked
