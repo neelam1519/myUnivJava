@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
+//Settings to change the user experience
 public class Settings extends AppCompatActivity {
     String TAG="Settings";
     Switch timetablenotification;
