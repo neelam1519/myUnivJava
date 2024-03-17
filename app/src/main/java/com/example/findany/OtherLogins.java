@@ -30,6 +30,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import java.util.ArrayList;
 import java.util.List;
 
+//Other logins when the user logged in with the other emails other than klu mail id
 public class OtherLogins extends AppCompatActivity {
 
     String TAG="OtherLogins";
