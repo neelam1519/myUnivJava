@@ -6,9 +6,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Window;
 import android.view.WindowManager;
-
+//Dialogs
 public class DialogUtils {
-
     public static Dialog createLoadingDialog(Context context) {
         Dialog loadingDialog = new Dialog(context);
         loadingDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
