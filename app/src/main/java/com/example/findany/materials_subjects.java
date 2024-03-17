@@ -34,9 +34,9 @@ public class materials_subjects extends AppCompatActivity {
         setContentView(R.layout.materials_subjects);
 
         Intent intent = getIntent();
-        year = intent.getStringExtra("year");
-        branch = intent.getStringExtra("branch");
-        specialization = intent.getStringExtra("specialization");
+        year = intent.getStringExtra("year"); //year
+        branch = intent.getStringExtra("branch"); //branch
+        specialization = intent.getStringExtra("specialization"); // specialization
 
         storingname=branch+specialization+year;
 
