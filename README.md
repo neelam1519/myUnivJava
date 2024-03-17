@@ -2,6 +2,9 @@ FIND ANY
 
 Welcome to Find Any! Hey there! Welcome to FIND ANY - A student companion app 📕🧑🏻‍💼
 
+Images: https://drive.google.com/drive/folders/1o6FQ7lzMEkC-Zu1THobD2TDxlSQQnhUI?usp=sharing
+Demo Video: https://drive.google.com/drive/folders/1o4xeFOwrtG_lBttyhvpt6gx7Il7kpDO_?usp=sharing
+
 NAMES AND EMAILS:
 
 Neelam Madhu Sudhan Reddy, Email: neelammsr@gmail.com
