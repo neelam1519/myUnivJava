@@ -2,19 +2,6 @@ FIND ANY
 
 Welcome to Find Any! Hey there! Welcome to FIND ANY - A student companion app 📕🧑🏻‍💼
 
-Images: https://drive.google.com/drive/folders/1o6FQ7lzMEkC-Zu1THobD2TDxlSQQnhUI?usp=sharing
-Demo Video: https://drive.google.com/drive/folders/1o4xeFOwrtG_lBttyhvpt6gx7Il7kpDO_?usp=sharing
-
-NAMES AND EMAILS:
-
-Neelam Madhu Sudhan Reddy, Email: neelammsr@gmail.com
-
-Jaswanth Salipalli, Email: 9921004631@gmail.com
-
-Palle Varshith, Email: 9921004598@klu.ac.in
-
-Mekala Chaitanya Kumar Reddy, Email: 99210041885.klu.ac.in
-
 What's FindAny? 
 "FindAny" is for students to access study materials, collaborate on projects, connect with peers, and receive timetable notifications. It serves as a centralized platform aimed at enhancing the university experience by providing convenient access to resources and fostering communication and collaboration among students. The app's name suggests its ability to help users find any information or support they need within the university context.
 
